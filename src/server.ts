@@ -1,4 +1,4 @@
-function welcome(name : string){
-    console.log("Welcome"+ name);
+function welcome(name: string) {
+    console.log('hjhh' + name);
 }
-welcome("Shivam kumar");
+welcome('Shivam kumar');
