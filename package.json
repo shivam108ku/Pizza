@@ -1,0 +1,23 @@
+{
+  "name": "majorp2",
+  "version": "1.0.0",
+  "description": "The Pizza App",
+  "homepage": "https://github.com/shivam108ku/Pizza#readme",
+  "bugs": {
+    "url": "https://github.com/shivam108ku/Pizza/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivam108ku/Pizza.git"
+  },
+  "license": "ISC",
+  "author": "Shivam K <shivam108ku@gmail.com>",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
