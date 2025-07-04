@@ -1,33 +1,39 @@
 {
-    "name": "majorp2",
-    "version": "1.0.0",
-    "description": "The Pizza App",
-    "homepage": "https://github.com/shivam108ku/Pizza#readme",
-    "bugs": {
-        "url": "https://github.com/shivam108ku/Pizza/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/shivam108ku/Pizza.git"
-    },
-    "license": "ISC",
-    "author": "Shivam K <shivam108ku@gmail.com>",
-    "type": "commonjs",
-    "main": "index.js",
-    "scripts": {
-        "dev": "nodemon src/server.js",
-        "format:fix": "prettier . --write",
-        "format:check": "prettier . --check",
-        "lint:check":"eslint . --check",
-        "lint:fix":"eslint . --fix"
-    },
-    "devDependencies": {
-        "@eslint/js": "^9.30.1",
-        "@types/node": "^24.0.10",
-        "eslint": "^9.30.1",
-        "nodemon": "^3.1.10",
-        "prettier": "3.6.2",
-        "typescript": "^5.8.3",
-        "typescript-eslint": "^8.35.1"
-    }
+  "name": "majorp2",
+  "version": "1.0.0",
+  "description": "The Pizza App",
+  "homepage": "https://github.com/shivam108ku/Pizza#readme",
+  "bugs": {
+    "url": "https://github.com/shivam108ku/Pizza/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivam108ku/Pizza.git"
+  },
+  "license": "ISC",
+  "author": "Shivam K <shivam108ku@gmail.com>",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "format:fix": "prettier . --write",
+    "format:check": "prettier . --check",
+    "lint:check": "eslint . --check",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@types/node": "^24.0.10",
+    "eslint": "^9.30.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "nodemon": "^3.1.10",
+    "prettier": "3.6.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.35.1"
+  },
+  "lint-staged":{
+    "*.ts":["npm run format:fix","npm run lint:fix"]
+  }
 }
