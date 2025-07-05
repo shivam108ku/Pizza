@@ -1,14 +1,15 @@
 import express, { Request, Response } from 'express';
 import logger from './config/logger';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import createHttpError, { HttpError } from 'http-errors';
 import { NextFunction } from 'connect';
 
 const app = express();
 
-app.get('/', (req, res, next) => {
-    const err = createHttpError(401, 'Cant access');
-    next(err);
-    // res.send('Welcome Shivam');
+app.get('/', (req, res) => {
+    // const err = createHttpError(401, 'Cant access');
+    // next(err);
+    res.send('Welcome Shivam');
 });
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
