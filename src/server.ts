@@ -13,4 +13,5 @@ const startServer = () => {
         process.exit(1);
     }
 };
+
 startServer();
